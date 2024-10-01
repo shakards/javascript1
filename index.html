@@ -1,0 +1,98 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Print Full Year</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Printing For getFullYear</h1>
+        <p id="getFullYearDemo"></p> 
+
+        <script>
+        const date1 = new Date();
+        document.getElementById("getFullYearDemo").innerHTML = date1.getFullYear(); 
+        </script>
+        
+        <h1>Printing For setFullYear</h1>
+        <p id="setFullYearDemo"></p>  
+
+        <script>
+        const date2 = new Date();
+        date2.setFullYear(2020);  
+        document.getElementById("setFullYearDemo").innerHTML = date2.getFullYear();  
+        </script>
+    </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Printing For getFullYear</h1>
+        <p id="getFullYearDemo"></p>  
+
+        <script>
+        const d = new Date();
+        d.getFullYear(2020);
+        document.getElementById("getFullYearDemo").innerHTML = d;
+        </script>
+        
+        <h1>Printing For setFullYear</h1>
+        <p id="YearDemo"></p>  
+
+        <script>
+        const c = new Date();
+        c.setFullYear(2020);
+        document.getElementById("YearDemo").innerHTML = c;
+      
+        </script>
+    </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Song at 6:05 PM</title>
+</head>
+<body>
+    <h1>Waiting for 6:05 PM Nigerian Time...</h1>
+
+    <!-- Audio element for the song -->
+    <audio id="song" src="path-to-your-song.mp3"></audio>
+
+    <script>
+        // Function to play the song
+        function playSong() {
+            const audioElement = document.getElementById('song');
+            audioElement.play();
+        }
+
+        // Function to check the current time and play the song at 6:05 PM
+        function checkTime() {
+            const now = new Date();
+            const hours = now.getHours();
+            const minutes = now.getMinutes();
+
+            // Check if it's 6:05 PM
+            if (hours === 18 && minutes === 5) {
+                playSong();
+            }
+        }
+
+        // Set an interval to check the time every minute
+        setInterval(checkTime, 60000); // Check every 60 seconds
+
+        // Initial check in case the page is loaded exactly at 6:05 PM
+        checkTime();
+    </script>
+</body>
+</html> 
